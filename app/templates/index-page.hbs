@@ -1,0 +1,26 @@
+
+
+<div id="wrapper">
+    <div class="main-content">
+        <div class="header-chat">
+            <h2 class="loginHere">Join Chat</h2>
+        </div><br>
+        <div class="l-part">
+            <p id="wrong-username-or-password"></p>
+            <Input type="text" id="email" placeholder="Username" value="suba@gmail.com"
+                onkeyup={{action "checkEmailValidation" }} class="input-1" />
+            <td id="emailValidation" class="error"></td><br>
+            <div class="overlap-text">
+                <Input type="password" id="pass" value="Suba@2000" placeholder="Password" class="input-2"
+                    onkeyup={{action "checkPasswordValidation" }} />
+                <td id="passwordValidation" class="error"></td><br>
+            </div>
+            <button {{action this.checkIsThisCorrectCredentials}} class="btn">Login</button>
+        </div>
+    </div>
+    <div class="sub-content">
+        <div class="s-part">
+            Don't have an account?<LinkTo @route="signup"> Sign up </LinkTo>
+        </div>
+    </div>
+</div>

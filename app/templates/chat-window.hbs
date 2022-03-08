@@ -1,0 +1,58 @@
+<div class="container">
+    <div class="row no-gutters">
+        <div class="col-md-12">
+            <pre class="room_name_display"><h4>{{this.chat_room_name.chatRoomName}}</h4></pre>
+            <div class="settings-tray">
+                <div class="friend-drawer no-gutters friend-drawer--grey">
+
+                    <img class="profile-image" src="https://cdn-icons-png.flaticon.com/512/219/219983.png" alt="">
+
+                    <div class="text">
+                        <h6>{{this.userName.name}}</h6>
+                        <p class="text-muted">online</p>
+                    </div>
+
+                    <div class="col-md-2">
+                        <LinkTo @route="index-page" class="btn btn-success">exit</LinkTo>
+                    </div>
+                </div>
+            </div>
+
+            <div id="message_area" class="message_area">
+
+            </div>
+
+            <div class="row-2" id="input-box">
+                <div class="col-12">
+                    <div class="chat-box-tray">
+                        <i class="material-icons">sentiment_very_satisfied</i>
+                        <input type="text" class="send-box" id="typing-box" placeholder="Type your message here...">
+                        <i class="material-icons" {{action "sendButtonPressed" }}>send</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{!-- <div class="header-area">
+    <h1>Chat Room</h1>
+</div>
+
+
+<div class="message-area" id="message-area">
+    <!-- <div class="message-box others-message-box">
+				<div class="message others-message"> Hi, How are you? </div>
+				<div class="separator"></div>
+			</div>
+			
+			<div class="message-box my-message-box">
+				<div class="message my-message"> I am good, how are you doing? </div>
+				<div class="separator"></div>
+			</div> -->
+</div>
+
+<div class="typing-area">
+    <textarea class="typing-box" id="typing-box"></textarea>
+    <button class="send-button" {{action "sendButtonPressed" }}> Send </button>
+</div> --}}

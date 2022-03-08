@@ -1,0 +1,202 @@
+{{!-- <div class="header-login">
+    <h2>Chat Room</h2>
+</div>
+<div class="message-area" id="message_area"></div>
+<div class="typing-area">
+    <textarea class="typing-box" id="typing-box"></textarea>
+    <button class="send-button" {{action "sendButtonPressed" }}> Send </button>
+</div> --}}
+
+{{!-- <div class="container">
+    <div class="row no-gutters">
+        <div class="col-md-8 border-right">
+            <div class="settings-tray">
+                <img class="profile-image" src="https://www.clarity-enhanced.net/wp-content/uploads/2020/06/filip.jpg"
+                    alt="Profile img">
+                <span class="settings-tray--right">
+                    <i class="material-icons">cached</i>
+                    <i class="material-icons">message</i>
+                    <i class="material-icons">menu</i>
+                </span>
+            </div>
+            <div class="search-box">
+                <div class="input-wrapper">
+                    <i class="material-icons">search</i>
+                    <input placeholder="Search here" type="text">
+                </div>
+            </div>
+            <hr>
+            <div class="friend-drawer friend-drawer--onhover">
+                <img class="profile-image"
+                    src="https://www.clarity-enhanced.net/wp-content/uploads/2020/06/optimus-prime.jpeg" alt="">
+                <div class="text">
+                    <h6>Optimus</h6>
+                    <p class="text-muted">Wanna grab a beer?</p>
+                </div>
+                <span class="time text-muted small">00:32</span>
+            </div>
+            <hr>
+            <div class="friend-drawer friend-drawer--onhover ">
+                <img class="profile-image"
+                    src="https://www.clarity-enhanced.net/wp-content/uploads/2020/06/real-terminator.png" alt="">
+                <div class="text">
+                    <h6>Skynet</h6>
+                    <p class="text-muted">Seen that canned piece of s?</p>
+                </div>
+                <span class="time text-muted small">13:21</span>
+            </div>
+            <hr>
+            <div class="friend-drawer friend-drawer--onhover">
+                <img class="profile-image" src="https://www.clarity-enhanced.net/wp-content/uploads/2020/06/termy.jpg"
+                    alt="">
+                <div class="text">
+                    <h6>Termy</h6>
+                    <p class="text-muted">Im studying spanish...</p>
+                </div>
+                <span class="time text-muted small">13:21</span>
+            </div>
+            <hr>
+            
+        </div>
+        <div class="col-md-8">
+            <div class="settings-tray">
+                <div class="friend-drawer no-gutters friend-drawer--grey">
+                    <img class="profile-image"
+                        src="https://www.clarity-enhanced.net/wp-content/uploads/2020/06/robocop.jpg" alt="">
+                    <div class="text">
+                        <h6>Robo Cop</h6>
+                        <p class="text-muted">Layin' down the law since like before Christ...</p>
+                    </div>
+                    <span class="settings-tray--right">
+                        <i class="material-icons">cached</i>
+                        <i class="material-icons">message</i>
+                        <i class="material-icons">menu</i>
+                    </span>
+                </div>
+            </div>
+            <div class="chat-panel">
+                <div class="row no-gutters">
+                    <div class="col-md-3">
+                        <div class="chat-bubble chat-bubble--left">
+                            <div class="message-area" id="message_area"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-md-3 offset-md-9">
+                        <div class="chat-bubble chat-bubble--right">
+                            Hello dude!
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-md-3 offset-md-9">
+                        <div class="chat-bubble chat-bubble--right">
+                            Hello dude!
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-md-3">
+                        <div class="chat-bubble chat-bubble--left">
+                            Hello dude!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="chat-box-tray">
+                            <i class="material-icons">sentiment_very_satisfied</i>
+                            <input type="text" class="send-box" id="typing-box" placeholder="Type your message here...">
+                            <i class="material-icons" {{action "sendButtonPressed" }}>send</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> --}}
+
+
+{{!-- <button {{action "send"}}>Welcome</button>
+{{this.userSession.session}} --}}
+{{!-- <div class="form">
+
+    <ul class="tab-group">
+        <li class="tab active"><a href="#signup">Sign Up</a></li>
+        <li class="tab"><a href="#login">Log In</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="signup">
+            <h1>Sign Up for Free</h1>
+
+            <form action="/" method="post">
+
+                <div class="top-row">
+                    <div class="field-wrap">
+                        <label>
+                            First Name<span class="req">*</span>
+                        </label>
+                        <input type="text" required autocomplete="off" />
+                    </div>
+
+                    <div class="field-wrap">
+                        <label>
+                            Last Name<span class="req">*</span>
+                        </label>
+                        <input type="text" required autocomplete="off" />
+                    </div>
+                </div>
+
+                <div class="field-wrap">
+                    <label>
+                        Email Address<span class="req">*</span>
+                    </label>
+                    <input type="email" required autocomplete="off" />
+                </div>
+
+                <div class="field-wrap">
+                    <label>
+                        Set A Password<span class="req">*</span>
+                    </label>
+                    <input type="password" required autocomplete="off" />
+                </div>
+
+                <button type="submit" class="button button-block" />Get Started</button>
+
+            </form>
+
+        </div>
+
+        <div id="login">
+            <h1>Welcome Back!</h1>
+
+            <form action="/" method="post">
+
+                <div class="field-wrap">
+                    <label>
+                        Email Address<span class="req">*</span>
+                    </label>
+                    <input type="email" required autocomplete="off" />
+                </div>
+
+                <div class="field-wrap">
+                    <label>
+                        Password<span class="req">*</span>
+                    </label>
+                    <input type="password" required autocomplete="off" />
+                </div>
+
+                <p class="forgot"><a href="#">Forgot Password?</a></p>
+
+                <button class="button button-block" />Log In</button>
+
+            </form>
+
+        </div>
+
+    </div><!-- tab-content -->
+
+</div> <!-- /form --> --}}
